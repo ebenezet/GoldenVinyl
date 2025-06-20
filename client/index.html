@@ -1,13 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script type="module" src="/src/main.js" defer></script>
+       <link rel="stylesheet" href="/src/style.css" class="css">
     <title>Vite App</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  <body aria-level="assertive">
+  <header>
+    <div class="logoInfo">
+      <img src="/src/images/vinyllogo.png" alt="logo of the company" class="vinyl"/>
+      <div class="textlogo">
+        <h1> VINYL REVIEWS</h1>
+        <p id="textForLogo"></p>
+      </div>
+    </div>
+  </header>
+  <main >
+    <section> 
+      <h2>Welcome to VINYL REVIEWS</h2>
+      <h3>Please sign in</h3>
+      <form id="sigin" class="signin">
+        <label for="email" class="bar">Email</label>
+        <input name="email" placeholder="name@outlook.com" required/>
+        <label for="password" class="bar">Password</label>
+        <input name="password" placeholder="password" required/>
+        <button type="submit" class="submit">Submit</button>
+      </form>
+    </section>
+     <section class="fewVinyl-container">
+        <img src="/src/images/kindofblue.jpg" alt="Kind Of Blue album cover" class="exampleVinyl"/>
+        <img src="/src/images/katebush.jpg" alt="The Dreaming album cover" class="exampleVinyl"/>
+        <img src="/src/images/queenII.jpg" alt="Queen II album cover" class="exampleVinyl"/>
+        <img src="/src/images/glass.jpg" alt="Glass Nos 1-5 album cover" class="exampleVinyl"/>
+        <img src="/src/images/swift.jpg" alt="Fearless album cover" class="exampleVinyl"/>
+        <img src="/src/images/lovesupreme.jpg" alt="A Love Supreme album cover" class="exampleVinyl"/>
+        <img src="/src/images/billie.jpg" alt="Lady Sings The Blues album cover" class="exampleVinyl"/>
+        <img src="/src/images/bobmarley.jpg" alt="Bob Marley The Legend album cover" class="exampleVinyl"/>
+    </section>
+    <section>
+      <form id="form" class="form">
+        <label for="name" class="bar">Name</label>
+        <input name="name" placeholder="name" required/>
+        <label for="country" class="bar">Country</label>
+        <input name="country" placeholder="country" />
+        <label for="album" class="bar">Album</label>
+        <input name="album" placeholder="album" required />
+        <label for="comment" class="bar">Comment</label>
+        <textarea name="comment" class="comment" placeholder=" Please leave a comment here about your favourite album"></textarea>
+        <button type="submit" class="submit">Submit</button>
+      </form>
+    </section>
+   
+    <section id="app" class="app"> 
+    </section>
+  </main>
+  <footer>
+
+  </footer>
   </body>
 </html>
