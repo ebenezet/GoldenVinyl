@@ -27,9 +27,7 @@ header{
 gap: 3px;
 }
 
-nav{
-  margin: 25px;
-}
+
 
 
 
@@ -67,7 +65,7 @@ h3{
 .signin{
   display:flex;
   position: relative;
-flex-direction: row;
+  flex-direction: row;
   justify-content: center;
   align-items:center;
   justify-items: center;
@@ -75,76 +73,82 @@ flex-direction: row;
  
 }
 
-
-.fewVinyl-container{
-  display:grid;
-  grid-template-columns: repeat(4, 2fr);
-  justify-content: center;
-  align-items:center;
-  margin-left: 1%;
-  grid-gap:0;
-
-  
-}
-
-.exampleVinyl{
-   display: flex;
-  cursor: pointer;
-  background-blend-mode: color;
-  margin-right:auto ;
-  width: auto;
-  height:23rem;
-}
 
 .form{
   display:flex;
   position: relative;
-flex-direction: column;
-  justify-content: center;
+  flex-direction: column;
   align-items:center;
-  justify-items: center;
- 
- 
 }
 
 
+.formTop{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.formMiddle{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.formBottom{
+  display: flex;
+  flex-direction: row;
+}
+
 input {
-  width:205px;
-  height: 26px;
+  width:12.8rem;
+  height: 1.6rem;
    display:flex;
   justify-content: center;
   align-content: center;
-  text-align:center
+  text-align:center;
 }
 
 textarea{
   display:flex;
-  width:80%;
-  height:60vh;
+  width:60%;
+  height:30vh;
   box-sizing: border-box;
   border-radius: 0.9rem;
   box-shadow: 0.25rem 0.25rem 0.4rem;
+  text-align: center;
+  padding-top: 6%;
 }
 
 
 
-.bar {
+label {
   display: flex;
   border: 1.5px black solid;
   justify-content: center;
   align-items: center;
-  width: 210px;
-  height:29px;
+  width: 13.1rem;
+  height: 1.8rem;
   background-color: lightgreen;
 }
+
+.labelsignin {
+  display: flex;
+  border: 1.5px black solid;
+  justify-content: center;
+  align-items: center;
+  width: 13.1rem;
+  height: 1.8rem;
+  background-color: tomato;
+}
+
 
 .submit{
     display: flex;
   border: 1.5px black solid;
   justify-content: center;
   align-items: center;
-  width: 106px;
-  height:29px;
+  width: 6.6rem;
+  height:1.8rem;
   background-color: green;
 }
 
@@ -171,13 +175,21 @@ main {
   gap: 35px;
 }
 
+.previousComments-container{
+  display:flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+
+
 
 
 .nameButton {
   display: flex;
   justify-content: center;
-  width: 250px;
-  height: 29px;
+   width: 13.1rem;
+  height: 1.8rem;
   background-color: lightblue;
   
 }
@@ -185,8 +197,8 @@ main {
 .countryButton {
   display: flex;
   justify-content: center;
-  width: 250px;
-  height: 29px;
+   width: 13.1rem;
+  height: 1.8rem;
   background-color: lightblue;
   
 }
@@ -194,8 +206,8 @@ main {
 .albumButton {
   display: flex;
   justify-content: center;
-  width: 250px;
-  height: 29px;
+   width: 13.1rem;
+  height: 1.8rem;
   background-color: lightblue;
   
 }
@@ -203,17 +215,23 @@ main {
 .commentText {
   display: flex;
   justify-content: center;
-  width: 250px;
-  height: 29px;
+   width: 13.1rem;
+  height: 1.8rem;
   background-color: lightblue;
 }
 
-.yearButton {
-  display: flex;
-  justify-content: center;
-  width: 250px;
-  height: 29px;
-  background-color: lightblue;
+
+
+img{
+  display:block;
+  max-inline-size:100%;
+}
+
+@media (300px <= width <= 900px) {
+
+
+
+
+}
   
-}
-
+  

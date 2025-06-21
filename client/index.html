@@ -22,36 +22,42 @@
     <section> 
       <h2>Welcome to VINYL REVIEWS</h2>
       <h3>Please sign in</h3>
+      <div class="signin-container">
       <form id="sigin" class="signin">
-        <label for="email" class="bar">Email</label>
+        <label for="email" class="labelsignin">Email</label>
         <input name="email" placeholder="name@outlook.com" required/>
-        <label for="password" class="bar">Password</label>
+        <label for="password" class="labelsignin">Password</label>
         <input name="password" placeholder="password" required/>
-        <button type="submit" class="submit">Submit</button>
+        <button type="submit" class="submit">Sign in</button>
       </form>
-    </section>
-     <section class="fewVinyl-container">
-        <img src="/src/images/kindofblue.jpg" alt="Kind Of Blue album cover" class="exampleVinyl"/>
-        <img src="/src/images/katebush.jpg" alt="The Dreaming album cover" class="exampleVinyl"/>
-        <img src="/src/images/queenII.jpg" alt="Queen II album cover" class="exampleVinyl"/>
-        <img src="/src/images/glass.jpg" alt="Glass Nos 1-5 album cover" class="exampleVinyl"/>
-        <img src="/src/images/swift.jpg" alt="Fearless album cover" class="exampleVinyl"/>
-        <img src="/src/images/lovesupreme.jpg" alt="A Love Supreme album cover" class="exampleVinyl"/>
-        <img src="/src/images/billie.jpg" alt="Lady Sings The Blues album cover" class="exampleVinyl"/>
-        <img src="/src/images/bobmarley.jpg" alt="Bob Marley The Legend album cover" class="exampleVinyl"/>
+      </div>
     </section>
     <section>
+      <h2>Please leave a comment about your favourite album here </h2>
       <form id="form" class="form">
-        <label for="name" class="bar">Name</label>
+        <div class="formTop">
+        <label for="name">Name</label>
         <input name="name" placeholder="name" required/>
-        <label for="country" class="bar">Country</label>
+        </div>
+        <div class="formMiddle">
+        <label for="country">Country</label>
         <input name="country" placeholder="country" />
-        <label for="album" class="bar">Album</label>
+        </div>
+        <div class="formBottom">
+        <label for="album">Album</label>
         <input name="album" placeholder="album" required />
-        <label for="comment" class="bar">Comment</label>
-        <textarea name="comment" class="comment" placeholder=" Please leave a comment here about your favourite album"></textarea>
-        <button type="submit" class="submit">Submit</button>
+        </div>
+        <label for="comment">Comment</label>
+        <textarea name="comment" class="comment" placeholder=" Your thoughts?"></textarea>
+        <button type="submit" class="submit" id="submit">Submit</button>
       </form>
+    <section> 
+      <h2>Please check out previous reviews of few fellow vinyls lovers</h2>
+      <div id="previousComments" class="previousComments-container">
+        <textarea name="previousComments" class="previousComments">
+        </textarea>
+      </div>
+    </section>  
     </section>
    
     <section id="app" class="app"> 

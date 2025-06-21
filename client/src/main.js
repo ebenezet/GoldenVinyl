@@ -65,15 +65,3 @@ form.addEventListener("submit", async (event) => {
   });
   displayVinylsreview();
 });
-
-// creating a text in circle for logo
-// const str = "Best Vinyl Reviews.Since 1897";
-// const textForLogo = document.getElementById("textForLogo");
-// window.onload = () => {
-//   for (let i = 0; i < str.length; i++) {
-//     let span = document.createElement("span");
-//     span.innerText = str[i];
-//     span.style.transform = `rotate(${11 * i}deg)`;
-//     textForLogo.appendChild(span);
-//   }
-// };
