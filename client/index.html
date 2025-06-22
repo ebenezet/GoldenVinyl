@@ -37,20 +37,20 @@
       <form id="form" class="form">
         <div class="form-container">
             <label for="name">Name</label>
-            <input name="name" placeholder="name" required/>
+            <input id="name" name="name" placeholder="name" required/>
             <label for="country">Country</label>
-            <input name="country" placeholder="country" />
+            <input id="country" name="country" placeholder="country" />
             <label for="album">Album</label>
-            <input name="album" placeholder="album" required />
+            <input id="album" name="album" placeholder="album" required />
         </div>
         <label for="comment">Comment</label>
-        <textarea name="comment" class="comment" placeholder=" Your thoughts?"></textarea>
+        <textarea name="comment" class="comment" id="comment" placeholder=" Your thoughts?"></textarea>
         <button type="submit" class="submit" id="submit">Submit</button>
       </form>
     <section> 
       <h2>Please check out previous reviews of few fellow vinyls lovers</h2>
-      <div id="previousComments" class="previousComments-container">
-        <textarea name="previousComments" class="previousComments">
+      <div class="previousComments-container">
+        <textarea  id="previousComments" name="previousComments" class="previousComments">
         </textarea>
       </div>
     </section>  
