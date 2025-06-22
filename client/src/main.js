@@ -50,7 +50,6 @@ const form = document.getElementById("form");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
-
   // setup form data object
   const formData = new FormData(form);
   const vinylsData = Object.fromEntries(formData);
@@ -65,23 +64,3 @@ form.addEventListener("submit", async (event) => {
   });
   displayVinylsreview();
 });
-
-// display the inputs from the form in the box 'previous message'
-
-// const button = document.getElementById("submit");
-// const nameOfUser = document.getElementById("name");
-// const countryOfUser = document.getElementById("country");
-// const albumOfUser = document.getElementById("album");
-// const commentOfUser = document.getElementById("comment");
-// const previousComment = document.createElement("p");
-// const textarea = document.getElementById("previousComments");
-
-// button.addEventListener("click", () => {
-//   const previousComment = `${nameOfUser.value} from ${countryOfUser} chosen album is ${albumOfUser} `;
-//   textarea = "";
-//   previousComment.className = "previousComment";
-
-//   console.log(previousComment);
-
-//   textarea.appendChild(previousComment);
-// });

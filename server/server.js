@@ -51,31 +51,10 @@ app.post("/jokes", async (req, res) => {
   res.send(data);
 });
 
-app.get("/jokes", (req, res) => {
-  console.log(req.query);
-
-  const filteredVinylsPerName = vinyls.filter(
-    (vinyl) => vinyl.artist == req.query.name
-  );
-  const filteredVinylsPerCountry = vinyls.filter(
-    (vinyl) => vinyl.genre == req.query.country
-  );
-  const filteredVinylsPerAlbum = vinyls.filter(
-    (vinyl) => vinyl.album == req.query.album
-  );
-  const filteredVinylsPerComment = vinyls.filter(
-    (vinyl) => vinyl.label == req.query.comment
-  );
-  console.log(filteredVinylsPerYear);
-
-  res.json(
-    filteredVinylsPerName,
-    filteredVinylsPerCountry,
-    filteredVinylsPerAlbum,
-    filteredVinylsPerComment
-  );
-});
-
 app.listen("6060", () => {
   console.log("app is running on port http://localhost:6060...");
 });
+
+window.onresize = () => {
+  window.location.reload();
+};
