@@ -20,22 +20,22 @@ async function displayVinylsreview() {
     const nameButton = document.createElement("button");
     const countryButton = document.createElement("button");
     const albumButton = document.createElement("button");
-    const commentText = document.createElement("p");
+    const commentButton = document.createElement("button");
 
     // set the content
     nameButton.innerText = vinylreview.name;
     countryButton.innerText = vinylreview.country;
     albumButton.innerText = vinylreview.album;
-    commentText.innerText = vinylreview.comment;
+    commentButton.innerText = vinylreview.comment;
 
     div.className = "gridForInfo";
 
     nameButton.className = "nameButton";
     countryButton.className = "countryButton";
     albumButton.className = "albumButton";
-    commentText.className = "commentText";
+    commentButton.className = "commentText";
 
-    div.append(nameButton, countryButton, albumButton, commentText);
+    div.append(nameButton, countryButton, albumButton, commentButton);
     app.appendChild(div);
   });
 }
