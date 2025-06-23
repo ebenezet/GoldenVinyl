@@ -17,10 +17,10 @@ async function displayVinylsreview() {
 
   vinylsreview.forEach((vinylreview) => {
     const div = document.createElement("div");
-    const nameButton = document.createElement("button");
-    const countryButton = document.createElement("button");
-    const albumButton = document.createElement("button");
-    const commentButton = document.createElement("button");
+    const nameButton = document.createElement("p");
+    const countryButton = document.createElement("p");
+    const albumButton = document.createElement("p");
+    const commentButton = document.createElement("p");
 
     // set the content
     nameButton.innerText = vinylreview.name;

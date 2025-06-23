@@ -54,7 +54,3 @@ app.post("/jokes", async (req, res) => {
 app.listen("6060", () => {
   console.log("app is running on port http://localhost:6060...");
 });
-
-window.onresize = () => {
-  window.location.reload();
-};
