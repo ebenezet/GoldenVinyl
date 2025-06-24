@@ -5,7 +5,7 @@ const app = document.getElementById("app");
 // write a function to fetch all vinlys
 
 async function fetchVinylsreview() {
-  const rawData = await fetch(`https://goldenvinyl.onrender.com`);
+  const rawData = await fetch(`https://goldenvinyl.onrender.com/jokes`);
   const vinylsreview = await rawData.json();
   return vinylsreview;
 }
@@ -55,7 +55,7 @@ form.addEventListener("submit", async (event) => {
   const vinylsData = Object.fromEntries(formData);
 
   // fetch the data from the server
-  const res = await fetch(`https://goldenvinyl.onrender.com`, {
+  const res = await fetch(`https://goldenvinyl.onrender.com/jokes`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
